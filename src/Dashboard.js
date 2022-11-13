@@ -113,18 +113,19 @@ const Dashboard = () => {
   return (
     <Container>
       <center>
-        <br />
-        <img className="logo" src={flamenetLogo} alt="FlameNet" />
-        <br />
-        <br />
-        <h1>Okanagan Nodemap:</h1>
-        <br />
+        <img
+          className="logo"
+          src={flamenetLogo}
+          alt="FlameNet"
+          style={{ width: "250px", paddingTop: "10px", paddingBottom: "10px" }}
+        />
+        <h2>Okanagan Nodemap:</h2>
         <br />
         <Row>
-          <Col xs={6}>
-            <ImageMapper src={okanaganNodeMap} map={MAP} width={500} />
+          <Col xl={6} lg={12} style={{ paddingBottom: "50px" }}>
+            <ImageMapper src={okanaganNodeMap} map={MAP} width={580} />
           </Col>
-          <Col xs={6} className="align-items-center">
+          <Col xl={6} lg={12} className="align-items-center">
             <Table id="rcorners1" responsive>
               <thead>
                 <tr>

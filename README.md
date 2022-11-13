@@ -2,4 +2,4 @@
 
 Your moms house
 
-Live Demo at [https://***REMOVED***.web.app/dashboard]
+Live Demo at [./src/imgs/dashboardSS.png]
