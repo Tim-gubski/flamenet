@@ -6,13 +6,15 @@ Your moms house
 
 Live Demo at [https://***REMOVED***.web.app/dashboard]
 
-<h4 align="center">FlameNet Dashboard</h4>
+<h1 align="center">FlameNet Dashboard</h1>
 
 ![](./src/imgs/dashboardSS.png)
 
-<h4 align="center">FlameNet Home Page</h4>
+<h1 align="center">FlameNet Home Page</h1>
 
 ![](./src/imgs/homeSS.png)
+
+<h1 align="center">Our Project</h1>
 
 ## Why Wildfires?
 
