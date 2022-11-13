@@ -155,7 +155,7 @@ const Dashboard = () => {
         <br />
         <div className="links">
           <div data-id="github">
-            <a href="https://github.com/Tim-gubski/flamenet">
+            <a href="https://github.com/Tim-gubski/flamenet" target="_blank">
               <FontAwesomeIcon className="icon" icon={faGithub} size="5x" />
             </a>
           </div>
