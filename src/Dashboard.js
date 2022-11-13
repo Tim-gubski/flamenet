@@ -4,6 +4,7 @@ import flamenetLogo from "./flamenet-logo-white.png";
 import okanaganNodeMap from "./nodemaps/okanagan-nodemap.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/fontawesome-free-brands";
+import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import ImageMapper from "react-img-mapper";
 import { Row, Col, Button, Container, Table } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
@@ -161,8 +162,8 @@ const Dashboard = () => {
         <br />
         <br />
         <div>
-          <button class="button-30" onClick={home}>Back to Home</button>
-          <a class="button-30" href="https://github.com/Tim-gubski/flamenet">View on Github</a>
+          <button class="button-30" onClick={home}><FontAwesomeIcon icon={faHouse} size="2x"/></button>
+          <a class="button-30" href="https://github.com/Tim-gubski/flamenet"><FontAwesomeIcon icon={faGithub} size="2x"/></a>
         </div>
       </center>
       <br />

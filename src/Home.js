@@ -6,6 +6,7 @@ import React, { useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/fontawesome-free-brands";
+import { faGauge } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   useEffect(() => {
@@ -39,8 +40,10 @@ const Home = () => {
   <div className="App">
     <img className="logo" src={flamenetLogo} alt="FlameNet" />
     <Columns />
-    <button class="button-30" onClick={dashboard}>View Example Dashboard</button>
-    <a class="button-30" href="https://github.com/Tim-gubski/flamenet">View on Github</a>
+    <div style={{marginTop: 20}}>
+      <button class="button-30" onClick={dashboard}><FontAwesomeIcon icon={faGauge} size="2x"/></button>
+          <a class="button-30" href="https://github.com/Tim-gubski/flamenet"><FontAwesomeIcon icon={faGithub} size="2x"/></a>
+    </div>
   </div>
   );
 };
