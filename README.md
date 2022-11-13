@@ -6,13 +6,15 @@ Protecting your moms house since 2022
 
 Live Demo at [https://***REMOVED***.web.app/dashboard]
 
-<h4 align="center">FlameNet Dashboard</h4>
+<h1 align="center">FlameNet Dashboard</h1>
 
 ![](./src/imgs/dashboardSS.png)
 
-<h4 align="center">FlameNet Home Page</h4>
+<h1 align="center">FlameNet Home Page</h1>
 
 ![](./src/imgs/homeSS.png)
+
+<h1 align="center">Our Project</h1>
 
 ## Why Wildfires?
 
@@ -27,8 +29,6 @@ Conversely, our solution was a mix of hardware and software that greatly increas
 ## What was our process?
 
 Our team used an iterative idea generation process to ensure all ideas were explored. In order to make sure we explored every idea, our team discussed the development of a machine learning model, as well as a variety of sensors and automation. After researching certifications and regulations around fire safety devices, our team developed a large amount of “potential” designs by using morphological charts and used the Pugh method to choose a final conceptual design.
-
-From our conceptual design, we developed our software and hardware prototypes. //Tim please sir
 
 ## Materials:
 
