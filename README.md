@@ -24,7 +24,12 @@ Despite pre-existing methods to detect wildfires, over ten billion dollars of da
 
 Conversely, our solution was a mix of hardware and software that greatly increases the automation of the detection of uncontrolled fires. This design can be generalized into a variety of other purposes, such as home safety or fire safety on large private properties. We have created a Nodal Mesh (our Net). When any node (called CFire) detects a flame, a signal is quickly broadcast between CFire units until it reaches the “main node.” This node is connected to the internet and uploads the location of the fire to our website, and sends a notification over text. This notification includes an Estuary link to an image of the fire. The image is vital, as it may reveal the cause of the fire, and whether a fire actually exists there or not.
 
-##  
+##  What was our process?
+Our team used an iterative idea generation process to ensure all ideas were explored. In order to make sure we explored every idea, our team discussed the development of a machine learning model, as well as a variety of sensors and automation. After researching certifications and regulations around fire safety devices, our team developed a large amount of “potential” designs by using morphological charts and used the Pugh method to choose a final conceptual design.
+
+From our conceptual design, we developed our software and hardware prototypes. //Tim please sir
+
+
 
 
 
