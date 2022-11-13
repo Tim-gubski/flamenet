@@ -174,7 +174,7 @@ const Dashboard = () => {
           </button>
           <a
             className="button-30"
-            href="https://github.com/Tim-gubski/flamenet"
+            href="https://github.com/Tim-gubski/FlameNet-HackPrinceton"
           >
             <FontAwesomeIcon icon={faGithub} size="2x" />
           </a>

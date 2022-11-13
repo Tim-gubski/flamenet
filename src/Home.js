@@ -57,7 +57,10 @@ const Home = () => {
         <button class="button-30" onClick={dashboard}>
           <FontAwesomeIcon icon={faGauge} size="2x" />
         </button>
-        <a class="button-30" href="https://github.com/Tim-gubski/flamenet">
+        <a
+          class="button-30"
+          href="https://github.com/Tim-gubski/FlameNet-HackPrinceton"
+        >
           <FontAwesomeIcon icon={faGithub} size="2x" />
         </a>
       </div>
