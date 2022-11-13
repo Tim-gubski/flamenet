@@ -1,11 +1,12 @@
 import { getDatabase, ref, onValue } from "firebase/database";
 import { useEffect, useState } from "react";
-import flamenetLogo from "./flamenet-logo.png";
+import flamenetLogo from "./flamenet-logo-white.png";
 import okanaganNodeMap from "./nodemaps/okanagan-nodemap.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/fontawesome-free-brands";
 import ImageMapper from "react-img-mapper";
 import { Row, Col, Button, Container, Table } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const green = "#3dfc03";
 
@@ -81,20 +82,26 @@ const Dashboard = () => {
       {
         name: "node2",
         shape: "circle",
-        coords: [185, 50, 8],
+        coords: [190, 50, 8],
         preFillColor:
           nodeData["node2"]?.status == "on fire" ? "#fc0303" : green,
       },
       {
         name: "node3",
         shape: "circle",
-        coords: [273, 25, 8],
+        coords: [280, 25, 8],
         preFillColor:
           nodeData["node3"]?.status == "on fire" ? "#fc0303" : green,
       },
       ...defaultNodes,
     ],
   };
+
+  let navigate = useNavigate(); 
+  const home = () =>{ 
+    let path = `/home`; 
+    navigate(path);
+  }
 
   return (
     <Container>
@@ -124,9 +131,9 @@ const Dashboard = () => {
                   return (
                     <tr
                       className={
-                        nodeData[key]?.status == "on fire"
+                        nodeData[key]?.status.toLowerCase() == "on fire"
                           ? "fire"
-                          : nodeData[key]?.status == "not on fire"
+                          : nodeData[key]?.status.toLowerCase() == "not on fire"
                           ? "no-fire"
                           : "pass"
                       }
@@ -153,12 +160,9 @@ const Dashboard = () => {
 
         <br />
         <br />
-        <div className="links">
-          <div data-id="github">
-            <a href="https://github.com/Tim-gubski/flamenet">
-              <FontAwesomeIcon className="icon" icon={faGithub} size="5x" />
-            </a>
-          </div>
+        <div>
+          <button class="button-30" onClick={home}>Back to Home</button>
+          <a class="button-30" href="https://github.com/Tim-gubski/flamenet">View on Github</a>
         </div>
       </center>
       <br />

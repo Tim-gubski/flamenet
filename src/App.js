@@ -2,7 +2,6 @@ import "./App.css";
 import { initializeApp } from "firebase/app";
 import { getDatabase, ref, onValue } from "firebase/database";
 import { useEffect, useState } from "react";
-import flamenetLogo from "./flamenet-logo.png";
 import okanaganNodeMap from "./nodemaps/okanagan-nodemap.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/fontawesome-free-brands";
