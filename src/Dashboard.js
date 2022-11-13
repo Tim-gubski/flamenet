@@ -106,7 +106,7 @@ const Dashboard = () => {
 
   let navigate = useNavigate();
   const home = () => {
-    let path = `/home`;
+    let path = `/`;
     navigate(path);
   };
 
