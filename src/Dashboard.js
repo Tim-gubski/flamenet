@@ -78,31 +78,37 @@ const Dashboard = () => {
         shape: "circle",
         coords: [105, 80, 8],
         preFillColor:
-          nodeData["node1"]?.status == "on fire" ? "#fc0303" : green,
+          nodeData["node1"]?.status.toLowerCase() == "on fire"
+            ? "#fc0303"
+            : green,
       },
       {
         name: "node2",
         shape: "circle",
         coords: [190, 50, 8],
         preFillColor:
-          nodeData["node2"]?.status == "on fire" ? "#fc0303" : green,
+          nodeData["node2"]?.status.toLowerCase() == "on fire"
+            ? "#fc0303"
+            : green,
       },
       {
         name: "node3",
         shape: "circle",
         coords: [280, 25, 8],
         preFillColor:
-          nodeData["node3"]?.status == "on fire" ? "#fc0303" : green,
+          nodeData["node3"]?.status.toLowerCase() == "on fire"
+            ? "#fc0303"
+            : green,
       },
       ...defaultNodes,
     ],
   };
 
-  let navigate = useNavigate(); 
-  const home = () =>{ 
-    let path = `/home`; 
+  let navigate = useNavigate();
+  const home = () => {
+    let path = `/home`;
     navigate(path);
-  }
+  };
 
   return (
     <Container>
@@ -147,7 +153,7 @@ const Dashboard = () => {
                 })}
                 {defaultNodes.map((i, index) => {
                   return (
-                    <tr className="no-fire">
+                    <tr className="no-fire" key={index}>
                       <td>node{index + 3}</td>
                       <td>{i.coords.slice(0, 2).join(", ")}</td>
                       <td>Not On Fire</td>
@@ -162,8 +168,15 @@ const Dashboard = () => {
         <br />
         <br />
         <div>
-          <button class="button-30" onClick={home}><FontAwesomeIcon icon={faHouse} size="2x"/></button>
-          <a class="button-30" href="https://github.com/Tim-gubski/flamenet"><FontAwesomeIcon icon={faGithub} size="2x"/></a>
+          <button className="button-30" onClick={home}>
+            <FontAwesomeIcon icon={faHouse} size="2x" />
+          </button>
+          <a
+            className="button-30"
+            href="https://github.com/Tim-gubski/flamenet"
+          >
+            <FontAwesomeIcon icon={faGithub} size="2x" />
+          </a>
         </div>
       </center>
       <br />
