@@ -78,27 +78,21 @@ const Dashboard = () => {
         shape: "circle",
         coords: [105, 80, 8],
         preFillColor:
-          nodeData["node1"]?.status.toLowerCase() == "on fire"
-            ? "#fc0303"
-            : green,
+          nodeData["node1"]?.status.toLowerCase() == "on fire" ? "#fc0303" : green,
       },
       {
         name: "node2",
         shape: "circle",
         coords: [190, 50, 8],
         preFillColor:
-          nodeData["node2"]?.status.toLowerCase() == "on fire"
-            ? "#fc0303"
-            : green,
+          nodeData["node2"]?.status.toLowerCase() == "on fire" ? "#fc0303" : green,
       },
       {
         name: "node3",
         shape: "circle",
         coords: [280, 25, 8],
         preFillColor:
-          nodeData["node3"]?.status.toLowerCase() == "on fire"
-            ? "#fc0303"
-            : green,
+          nodeData["node3"]?.status.toLowerCase() == "on fire" ? "#fc0303" : green,
       },
       ...defaultNodes,
     ],
@@ -169,15 +163,8 @@ const Dashboard = () => {
         <br />
         <br />
         <div>
-          <button className="button-30" onClick={home}>
-            <FontAwesomeIcon icon={faHouse} size="2x" />
-          </button>
-          <a
-            className="button-30"
-            href="https://github.com/Tim-gubski/flamenet"
-          >
-            <FontAwesomeIcon icon={faGithub} size="2x" />
-          </a>
+          <button className="button-30" onClick={home}><FontAwesomeIcon icon={faHouse} size="2x"/></button>
+          <a className="button-30" href="https://github.com/Tim-gubski/flamenet"><FontAwesomeIcon icon={faGithub} size="2x"/></a>
         </div>
       </center>
       <br />
