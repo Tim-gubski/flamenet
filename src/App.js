@@ -9,6 +9,7 @@ import ImageMapper from "react-img-mapper";
 import Dashboard from "./Dashboard";
 import Home from "./Home";
 import { Routes, Route } from "react-router-dom";
+import flamenetLogo from "./flamenet-logo-white.png";
 
 const firebaseConfig = {
   apiKey: "***REMOVED***",
@@ -24,11 +25,55 @@ const firebaseConfig = {
 function App() {
   const app = initializeApp(firebaseConfig);
 
+  const [width, setWidth] = useState(window.innerWidth);
+
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowSizeChange);
+    return () => {
+      window.removeEventListener("resize", handleWindowSizeChange);
+    };
+  }, []);
+
+  const isMobile = width <= 768;
+
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="dashboard" element={<Dashboard />} />
-    </Routes>
+    <>
+      {!isMobile && (
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="dashboard" element={<Dashboard />} />
+        </Routes>
+      )}
+      {isMobile && (
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100vh",
+          }}
+        >
+          <center>
+            <img
+              className="logo"
+              src={flamenetLogo}
+              alt="FlameNet"
+              style={{
+                width: "70%",
+                paddingTop: "10px",
+                paddingBottom: "10px",
+              }}
+            />
+            <h3>
+              Please visit this site from a comptuer to see the full content
+            </h3>
+          </center>
+        </div>
+      )}
+    </>
   );
 }
 
