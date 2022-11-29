@@ -4,7 +4,7 @@
 
 Protecting your moms house since 2022
 
-Live Demo at [https://***REMOVED***.web.app/dashboard]
+Live Demo at [https://flamenet-b780e.web.app/dashboard]
 
 <h1 align="center">FlameNet Dashboard</h1>
 

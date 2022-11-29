@@ -8,12 +8,12 @@
 
 int currentState;
 
-const char* ssid = "Tims iPhone";
-const char* password = "1234567890";
+const char* ssid = "wifi ssid";
+const char* password = "wifi pass";
 
-const char* serverName1 = "***REMOVED***/nodes/node1.json";
-const char* serverName2 = "***REMOVED***/nodes/node2.json";
-const char* serverName3 = "***REMOVED***/nodes/node3.json";
+const char* serverName1 = "firebaseurl1";
+const char* serverName2 = "firebaseurl2";
+const char* serverName3 = "firebaseurl3";
 
 
 int nodeNum = 1;
@@ -90,11 +90,11 @@ void putToDB(int number, bool status){
         
       // Free resources
       http.end();
-      http.begin("***REMOVED***");
+      http.begin("twilio api");
       http.addHeader("Content-Type", "application/x-www-form-urlencoded");
-      http.setAuthorization("***REMOVED***", "***REMOVED***");
+      http.setAuthorization("userid", "password");
       // Data to send with HTTP POST
-      httpResponseCode = http.POST("Body=There is a fire!&From=***REMOVED***&To=***REMOVED***");
+      httpResponseCode = http.POST("Body=There is a fire!&From=+fromnumber&To=+tonumber");
       Serial.print("HTTP Response code: ");
       Serial.println(httpResponseCode);
       http.end();

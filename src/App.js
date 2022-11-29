@@ -12,14 +12,7 @@ import { Routes, Route } from "react-router-dom";
 import flamenetLogo from "./flamenet-logo-white.png";
 
 const firebaseConfig = {
-  apiKey: "***REMOVED***",
-  authDomain: "***REMOVED***",
-  databaseURL: "***REMOVED***",
-  projectId: "***REMOVED***",
-  storageBucket: "***REMOVED***.appspot.com",
-  messagingSenderId: "***REMOVED***",
-  appId: "1:***REMOVED***:web:67aaeabbd8df3557cebb28",
-  measurementId: "***REMOVED***",
+  // Firebase configuration here
 };
 
 function App() {
